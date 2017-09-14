@@ -3,6 +3,8 @@ class SessionsController < ApplicationController
   end
 
   def create
+    #request.env['omniauth.auth']
+    byebug
     @user = User.find_by(email: params[:session][:email])
     if @user && @user.authenticate(params[:session][:password])
       session[:user_id] = @user.id

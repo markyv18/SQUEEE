@@ -27,6 +27,7 @@ gem 'bootstrap-social-rails'
 gem 'twilio-ruby'
 gem 'faker'
 gem 'redis'
+gem 'omniauth-google-oauth2'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
@@ -44,4 +45,6 @@ group :development, :test do
   gem 'simplecov', :require => false
   gem 'vcr'
   gem 'webmock'
+  gem 'byebug'
+  gem 'awesome_print'
 end
