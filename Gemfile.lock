@@ -58,6 +58,7 @@ GEM
     bootstrap-social-rails (4.12.0)
       railties (>= 3.1)
     builder (3.2.3)
+    byebug (9.1.0)
     capybara (2.14.4)
       addressable
       mime-types (>= 1.16)
@@ -264,6 +265,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   bootstrap-social-rails
   bootstrap_form!
+  byebug
   capybara
   coffee-rails (~> 4.2)
   factory_girl_rails (~> 4.0)
@@ -294,4 +296,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.15.1
+   1.15.4

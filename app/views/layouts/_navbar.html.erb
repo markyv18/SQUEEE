@@ -29,21 +29,37 @@
               <% elsif current_user %>
                 <li class="new-trip"><a href=<%= new_user_trip_path(current_user) %>>New Trip</a></li>
               <% else %>
-                <li class="new-trip"><a href=<%= login_path %>>New Trip</a></li>
+              <li class="new-trip"><a href=<%= login_path %>>New Trip</a></li>
               <% end %>
-
             </ul>
 
             <% if current_user %>
               <%= render partial: "/layouts/trip_dropdowns" %>
             <% end %>
 
-              <%= form_tag('/search', method: :get, class: "nav navbar-form navbar-left") do %>
+            <%= form_tag('/search', method: :get, class: "nav navbar-form navbar-left") do %>
               <div>
                 <%= text_field_tag :query, "find a city", class: "transp-text" %>
                 <%= submit_tag "Search", class: "btn btn-search" %>
               </div>
-              <% end %>
+            <% end %>
+
+            <%= form_tag(weather_path, method: :get, class: "nav navbar-form navbar-left") do %>
+              <div>
+                <%= text_field_tag :destination, "City, ST", class: "transp-text" %>
+                <%= submit_tag "get weather", class: "btn btn-search" %>
+              </div>
+            <% end %>
+
+            <% if @current_weather %>
+              <div>
+                <%= @current_weather.location %>
+                <%= @current_weather.conditions %>
+                <%= @current_weather.temp %>
+                <%= @current_weather.humidity %>
+                <%= @current_weather.wind %>
+              </div>
+            <% end %>
 
             <ul class="nav navbar-nav navbar-right">
               <% if current_user && current_user.vendor? %>
