@@ -5,6 +5,9 @@
     <span class="fa fa-google"></span> Sign in with Google
   <% end %>
   <%= link_to new_user_path, class: "btn btn-social btn-facebook" do %>
+  <!-- hit this link... got to FB... approve app.... ping back to this app.. something something... redirect to new_user_path -->
+  <%= link_to image_tag('fb.png'), "https://www.facebook.com/v2.10/dialog/oauth?client_id=#{ENV['FACEBOOK_APP_ID']}&redirect_uri=http://localhost:3000/users/new&scope=email,public_profile" %>
+
     <span class="fa fa-facebook"></span> Sign in with Facebook
   <% end %>
 </div>

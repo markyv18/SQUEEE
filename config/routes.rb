@@ -2,12 +2,19 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get '/search', to: 'search#index'
+
+
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
-  get '/weather', to: 'weather#show'
-  # get '/weather/forecast', to: 'weather#index'
 
+  get '/auth/facebook', as: 'facebook_login'
+  get '/auth/google', as: 'google_login'
+  get '/auth/twitter', as: 'twitter_login'
+  get '/auth/:provider/callback', to: 'sessions#create'
+
+
+  get '/weather', to: 'weather#index'
 
   resources :users, only: [:new, :create, :edit, :update, :show, :destroy] do
     resources :trips, only: [:new, :index, :create, :show, :edit, :update] do
@@ -19,11 +26,6 @@ Rails.application.routes.draw do
       post '/tours/:id', to: 'tours#create'
     end
   end
-
-  get '/auth/facebook', as: 'facebook_login'
-  get '/auth/google', as: 'google_login'
-  get '/auth/twitter', as: 'twitter_login'
-  get '/auth/:provider/callback', to: 'sessions#create'
 
   namespace :admin do
     get '/dashboard', to: 'dashboard#index'

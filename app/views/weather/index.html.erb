@@ -1,0 +1,12 @@
+HI SEE ALL THE EXTENDED FORECAST HERE
+<ul>
+  <% @forecast.each do |day| %>
+    <li>Forecast Time: <%= day.day %> </li>
+    <li> Forecast: <%= day.temp_text %> </li>
+    <li> Chance of Precipitation: <%= day.percent_precip %>% </li>
+<!-- turn icon into some pic or something -->
+    <li> Make this into a cute icon: <%= day.weather_icon_url %> </li>
+    <li> Do date math here if i want to show  <%= day.today_plus %> </li>
+    <br><br><br>
+  <% end  %>
+</ul>

@@ -1,8 +1,13 @@
-<ul>
-  <li class='new-trip'> <%= @presenter.current_weather.location %> </li>
-  <li class='new-trip'> <%= @presenter.current_weather.conditions %> </li>
-  <li class='new-trip'> <%= @presenter.current_weather.temp %> </li>
-  <li class='new-trip'> <%= @presenter.current_weather.humidity %> </li>
-  <li class='new-trip'> <%= @presenter.current_weather.wind %> </li>
-  <li> Click here to see an extended forecast</li>
-</ul>
+
+<!-- hidden params passed into the controller that is the location of this search -->
+<div>
+    <%= form_tag(weather_path, method: :get, class: 'nav navbar-form navbar-left') do %>
+    <%= @presenter.current_weather.location %>
+    <%= @presenter.current_weather.conditions %>
+    <%= @presenter.current_weather.temp %>
+    <%= @presenter.current_weather.humidity %>
+    <%= @presenter.current_weather.wind %>
+    <% text_field_tag :destination_forecast, @presenter.current_weather.location, class: 'transp-text' %>
+    <%= submit_tag 'extended forecast', class: 'btn btn-search' %>
+  </div>
+<% end %>

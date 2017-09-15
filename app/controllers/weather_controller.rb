@@ -1,5 +1,6 @@
 class WeatherController < ApplicationController
   def index
-    # @forecast = Weather.find_forecast(params[:thing])
+    byebug
+    @forecast = ForecastWeather.find_forecast(params[:destination_forecast])
   end
 end
