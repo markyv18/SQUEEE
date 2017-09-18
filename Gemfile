@@ -27,6 +27,13 @@ gem 'bootstrap-social-rails'
 gem 'twilio-ruby'
 gem 'faker'
 gem 'redis'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-facebook'
+gem 'omniauth-github'
+gem 'omniauth-amazon'
+gem 'omniauth-twitch'
+gem 'omniauth-twitter'
+gem 'stripe'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
@@ -44,4 +51,6 @@ group :development, :test do
   gem 'simplecov', :require => false
   gem 'vcr'
   gem 'webmock'
+  gem 'byebug'
+  gem 'awesome_print'
 end

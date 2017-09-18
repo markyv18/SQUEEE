@@ -1,13 +1,45 @@
 <h1 class="sign-in">You must sign in or create an account to create a trip</h1>
-
-<div class='oauth-logins'>
-  <%= link_to login_path, class: "btn btn-social btn-google" do %>
-    <span class="fa fa-google"></span> Sign in with Google
-  <% end %>
-  <%= link_to new_user_path, class: "btn btn-social btn-facebook" do %>
-    <span class="fa fa-facebook"></span> Sign in with Facebook
-  <% end %>
-</div>
+<div class='container'>
+  <div class='oauth-logins'>
+    <div class="row">
+      <div class="col-sm-4">
+        <%= link_to "/auth/google_oauth2", class: "btn btn-social btn-google" do %>
+          <span class="fa fa-google"></span> Sign in with Google
+        <% end %>
+      </div>
+      <div class="col-sm-4">
+        <%= link_to "/auth/amazon", class: "btn btn-social btn-amazon" do %>
+          <span class="fa fa-amazon"></span> Sign in with Amazon
+        <% end %>
+      </div>
+      <div class="col-sm-4">
+        <%= link_to "/auth/facebook", class: "btn btn-social btn-facebook" do %>
+          <span class="fa fa-facebook"></span> Sign in with Facebook
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class='oauth-logins'>
+    <div class='row'>
+      <div class="col-sm-4">
+        <%= link_to "/auth/github", class: "btn btn-social btn-github" do %>
+          <span class="fa fa-github"></span> Sign in with Github
+            <% end %>
+          </div>
+          <div class="col-sm-4">
+            <%= link_to "/auth/twitch", class: "btn btn-social btn-twitch" do %>
+              <span class="fa fa-twitch"></span> Sign in with Twitch
+            <% end %>
+          </div>
+          <div class="col-sm-4">
+            <%= link_to "/auth/twitter", class: "btn btn-social btn-twitter" do %>
+              <span class="fa fa-twitter"></span> Sign in with Twitter
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
 
 <div class="container form">
   <h3 class="sign-in">Sign In with Email:</h3>
