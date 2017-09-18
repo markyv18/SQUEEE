@@ -33,6 +33,7 @@ gem 'omniauth-github'
 gem 'omniauth-amazon'
 gem 'omniauth-twitch'
 gem 'omniauth-twitter'
+gem 'stripe'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
