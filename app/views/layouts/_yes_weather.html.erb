@@ -8,6 +8,7 @@
     <%= @presenter.current_weather.humidity %>
     <%= @presenter.current_weather.wind %>
     <% text_field_tag :destination_forecast, @presenter.current_weather.location, class: 'transp-text' %>
+    <% text_field_tag :forecast, @presenter.current_weather.location, class: 'transp-text' %>
     <%= submit_tag 'extended forecast', class: 'btn btn-search' %>
   </div>
 <% end %>
