@@ -1,30 +1,17 @@
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider :google_oauth2, ENV['GOOGLE_CLIENT_ID'], ENV['GOOGLE_CLIENT_SECRET'],
-    {
-    scope: 'email, profile'
-  }
-end
+    { scope: 'email, profile' }
 
-Rails.application.config.middleware.use OmniAuth::Builder do
-    provider :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET'],
-      scope: 'public_profile,email'
-end
+  provider :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET'],
+    { scope: 'public_profile,email' }
 
-Rails.application.config.middleware.use OmniAuth::Builder do
-    provider :github, ENV['GITHUB_KEY'], ENV['GITHUB_SECRET']
-end
+  provider :github, ENV['GITHUB_KEY'], ENV['GITHUB_SECRET']
 
-Rails.application.config.middleware.use OmniAuth::Builder do
-    provider :amazon, ENV['AMAZON_CLIENT_ID'], ENV['AMAZON_CLIENT_SECRET'],
-          {
-            :scope => 'profile'
-                }
-end
+  provider :amazon, ENV['AMAZON_CLIENT_ID'], ENV['AMAZON_CLIENT_SECRET'],
+    { :scope => 'profile' }
 
-Rails.application.config.middleware.use OmniAuth::Builder do
-    provider :twitch, ENV["TWITCH_CLIENT_ID"], ENV["TWITCH_CLIENT_SECRET"]
-end
+  provider :twitch, ENV["TWITCH_CLIENT_ID"], ENV["TWITCH_CLIENT_SECRET"]
 
-Rails.application.config.middleware.use OmniAuth::Builder do
-    provider :twitter, ENV["TWITTER_API_KEY"], ENV["TWITTER_API_SECRET"]
+  provider :twitter, ENV["TWITTER_API_KEY"], ENV["TWITTER_API_SECRET"]
+
 end
