@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    manual_login? ? @user = manual_login? : @user = User.find_or_create_by_auth(request.env['omniauth.auth'])
+    manual_login? ? @user = manual_login_info : @user = oauth_login_info
     if @user #&& @user.authenticate(params[:session][:password])
       session[:user_id] = @user.id
       if @user.vendor?
@@ -28,5 +28,13 @@ class SessionsController < ApplicationController
 
   def manual_login?
     params[:session]
+  end
+
+  def manual_login_info
+    User.find_by(email: params[:session][:email])
+  end
+
+  def oauth_login_info
+    User.find_or_create_by_auth(request.env['omniauth.auth'])
   end
 end
