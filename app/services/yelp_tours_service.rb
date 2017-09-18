@@ -12,7 +12,7 @@ class YelpToursService
       req.url "/v3/businesses/search"
       req.params['location']       = city
       req.params['categories']     = "tours"
-      req.params['limit']           = limit
+      req.params['limit']          = limit
       req.headers['Authorization'] = "bearer #{ENV['yelp_token']}"
     end
     parse_json(response)

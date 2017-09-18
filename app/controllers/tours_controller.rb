@@ -5,6 +5,7 @@ class ToursController < ApplicationController
       @tours = ToursPresenter.new(params[:city])
     else
       @tours = ToursPresenter.new("Denver")
+      binding.pry
     end
   end
 

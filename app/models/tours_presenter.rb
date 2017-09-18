@@ -8,7 +8,8 @@ class ToursPresenter
   end
 
   def compile_tours_presenter
-    binding.pry
-    YelpToursService.retrieve_tours_for_city(city)
+    @tours = YelpToursService.retrieve_tours_for_city(city)[:businesses].map do |tour|
+      CityTour.new(tour)
+    end
   end
 end
