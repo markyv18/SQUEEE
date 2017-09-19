@@ -1,6 +1,5 @@
 class SearchController < ApplicationController
   def index
-    binding.pry
     if params[:city]
       @city_id = params[:city]
       @city = City.find(@city_id)

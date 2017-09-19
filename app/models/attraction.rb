@@ -1,6 +1,7 @@
 require 'json'
 
 class Attraction
+  include ActiveModel::Serialization
   attr_reader :name,
               :vicinity,
               :place_id,
