@@ -1,4 +1,4 @@
-class CityTour
+class YelpTour
   attr_reader :id,
               :name,
               :image_url,
@@ -7,7 +7,8 @@ class CityTour
               :address,
               :phone,
               :location,
-              :categories
+              :categories,
+              :photos
 
   def initialize(attrs)
     @id         = attrs[:id]
@@ -19,6 +20,7 @@ class CityTour
     @phone      = attrs[:display_phone]
     @location   = compile_location(attrs[:coordinates])
     @categories = compile_categories(attrs[:categories])
+    @photos     = attrs[:photos]
   end
 
   def compile_categories(categories)
