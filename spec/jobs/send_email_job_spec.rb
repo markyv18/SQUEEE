@@ -1,5 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe SendEmailJob, type: :job do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "calls the UserMailer method" do
+    user = create(:user)
+    ActiveJob::Base.queue_adapter = :test
+    expect {
+      SendEmailJob.perform_later(user)
+    }.to have_enqueued_job(SendEmailJob)
+  end
 end
