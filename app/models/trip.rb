@@ -2,7 +2,7 @@ class Trip < ApplicationRecord
   belongs_to :user
   belongs_to :city
   has_many :itineraries
-  # has_many :places, through: :itineraries
+  has_many :places, through: :itineraries
 
   validates_presence_of :start_city
   validates_presence_of :start_date
@@ -20,5 +20,18 @@ class Trip < ApplicationRecord
 
   def sorted_itineraries
     self.itineraries.order(:date)
+  end
+
+  def places_by_date(date)
+    places
+      .joins(:itineraries)
+      .where(itineraries: {date: date})
+  end
+
+  def attractions_by_date(date)
+    places_by_date(date).map do |place|
+      raw_data = GooglePlacesService.fetch_details(place.google_place_id)
+      Attraction.new(raw_data)
+    end
   end
 end

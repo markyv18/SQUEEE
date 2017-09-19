@@ -6,6 +6,14 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
 
+  namespace :api do
+    namespace :v1 do
+      namespace :trips do
+        get ':id/attractions', to: 'attractions_by_date#index'
+      end
+    end
+  end
+
   resources :users, only: [:new, :create, :edit, :update, :show, :destroy] do
     resources :trips, only: [:new, :index, :create, :show, :edit, :update] do
       resources :itineraries, only: [:destroy]
