@@ -3,7 +3,7 @@ class YelpToursService
     @conn = Faraday.new("https://api.yelp.com")
   end
 
-  def self.retrieve_tours_for_city(city, limit = 10)
+  def self.retrieve_tours_for_city(city, limit = 15)
     new.retrieve_tours_for_city(city, limit)
   end
 

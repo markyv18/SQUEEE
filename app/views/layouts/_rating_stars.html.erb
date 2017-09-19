@@ -1,0 +1,33 @@
+<% if rating == 1 %>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+<% elsif rating == 2 %>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+<% elsif rating == 3 %>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+<% elsif rating == 4 %>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+<% elsif rating == 5 %>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+<% else %>
+  <p>No ratings available</p>
+<% end %>

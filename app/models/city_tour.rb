@@ -14,7 +14,7 @@ class CityTour
     @name       = attrs[:name]
     @image_url  = attrs[:image_url]
     @url        = attrs[:url]
-    @rating     = attrs[:rating].to_s
+    @rating     = attrs[:rating].to_i
     @address    = attrs[:location][:display_address]
     @phone      = attrs[:display_phone]
     @location   = {}
