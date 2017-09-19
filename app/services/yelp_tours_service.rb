@@ -7,12 +7,25 @@ class YelpToursService
     new.retrieve_tours_for_city(city, limit)
   end
 
+  def self.retrieve_tour(id)
+    new.retrieve_tour(id)
+  end
+
   def retrieve_tours_for_city(city, limit)
     response = @conn.get do |req|
       req.url "/v3/businesses/search"
       req.params['location']       = city
       req.params['categories']     = "tours"
       req.params['limit']          = limit
+      req.headers['Authorization'] = "bearer #{ENV['yelp_token']}"
+    end
+    parse_json(response)
+  end
+
+  def retrieve_tour(id)
+    response = @conn.get do |req|
+      req.url                      "/v3/businesses/search"
+      req.params['id']             = id
       req.headers['Authorization'] = "bearer #{ENV['yelp_token']}"
     end
     parse_json(response)
