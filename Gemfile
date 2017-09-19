@@ -34,6 +34,7 @@ gem 'omniauth-amazon'
 gem 'omniauth-twitch'
 gem 'omniauth-twitter'
 gem 'stripe'
+gem 'sidekiq'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

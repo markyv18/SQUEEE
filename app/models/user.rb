@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  after_create :welcome_email
+
   has_secure_password
   enum role: [:user, :vendor, :admin]
 
@@ -6,7 +8,7 @@ class User < ApplicationRecord
   has_many :tours
   has_many :messages
 
-  #validates_presence_of :first_name
+
   #validates_presence_of :last_name
   #validates_presence_of :email
   #validates_presence_of :phone
@@ -31,7 +33,11 @@ class User < ApplicationRecord
     user.email = auth['info']['email']
 
     user.save
-    UserMailer.welcome_email(user).deliver
+    #SendEmailJob.perform_later(user) unless user.created_at > Time.now - 1.hour
     user
+  end
+
+  def welcome_email
+    SendEmailJob.set(wait: 1.seconds).perform_later(user) #unless user.created_at > Time.now - 5.minutes
   end
 end
