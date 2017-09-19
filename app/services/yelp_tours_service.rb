@@ -24,8 +24,7 @@ class YelpToursService
 
   def retrieve_tour(id)
     response = @conn.get do |req|
-      req.url                      "/v3/businesses/search"
-      req.params['id']             = id
+      req.url                        "/v3/businesses/#{id}"    
       req.headers['Authorization'] = "bearer #{ENV['yelp_token']}"
     end
     parse_json(response)
