@@ -16,7 +16,6 @@ class Attraction
               :reviews
 
   def initialize(attr={})
-    @attr = attr
     @name = attr[:name]
     @vicinity = attr[:vicinity]
     @place_id = attr[:place_id]
