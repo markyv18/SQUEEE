@@ -9,6 +9,6 @@ class ToursController < ApplicationController
   end
 
   def show
-    @yelp_tour = TourPresenter.new(params[:id])
+    @yelp_tour = TourPresenter.new(params[:id]).tour
   end
 end
