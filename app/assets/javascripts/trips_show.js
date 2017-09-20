@@ -1,4 +1,4 @@
-$(document).on('ready', function() {
+$(document).on('turbolinks:load', function() {
   var directionsService, directionsDisplay, map;
   fetchAttractions($('#day-0').text());
   dateButton();
