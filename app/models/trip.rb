@@ -26,5 +26,6 @@ class Trip < ApplicationRecord
 
   def email_trip
     SendTripJob.perform_later(self)
+    SendTripJob.set(wait_until: (self.start_date - 1.day).to_s).perform_later(self)
   end
 end
