@@ -1,8 +1,8 @@
 class ToursController < ApplicationController
 
   def index
-    if params[:city]
-      @yelp_tours = ToursPresenter.new(params[:city])
+    if params[:format]
+      @yelp_tours = ToursPresenter.new(params[:format])
     else
       @yelp_tours = ToursPresenter.new("Denver")
     end

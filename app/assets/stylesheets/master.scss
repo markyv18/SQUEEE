@@ -27,7 +27,7 @@ body {
   }
 
   #tour-map {
-    height: 304px;
+    height: 415px;
     width: 100%;
     margin-left: 2%;
     margin-right: 2%;
@@ -40,10 +40,14 @@ html, body {
   padding: 0;
 }
 
-h2, h4 {
+h1, h2, h4 {
   color: $header-links;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
 }
 
 .light-text {

@@ -1,6 +1,20 @@
 <hr>
 <div class="container">
-  <h1><%= @yelp_tour.name %></h1>
+  <div class="row">
+    <div class="col-sm-offset-1 col-sm-6">
+      <h1><%= @yelp_tour.name %></h1>
+    </div>
+    <div class="col-sm-3">
+      <br>
+      <p><%= @yelp_tour.address.first %></p>
+      <p><%= @yelp_tour.address.last %></p>
+    </div>
+    <div class="col-sm-2">
+      <br>
+      <p><%= @yelp_tour.phone %></p>
+      <%= render partial: "layouts/rating_stars", :locals => {:rating => @yelp_tour.rating } %>
+    </div>
+  </div>
   <hr>
   <div class="row">
     <div class="col-sm-6">
