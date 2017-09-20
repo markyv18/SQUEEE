@@ -2,12 +2,13 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get '/search', to: 'search#index'
+
+
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
   get '/auth/:provider/callback', to: 'sessions#create'
 
-  resources :tours, only: [:index, :show]
   namespace :api do
     namespace :v1 do
       namespace :trips do
@@ -15,6 +16,11 @@ Rails.application.routes.draw do
       end
     end
   end
+  get '/auth/:provider/callback', to: 'sessions#create'
+
+  get '/weather', to: 'weather#index'
+
+  resources :tours, only: [:index, :show]
 
   resources :users, only: [:new, :create, :edit, :update, :show, :destroy] do
     resources :trips, only: [:new, :index, :create, :show, :edit, :update] do
@@ -27,11 +33,10 @@ Rails.application.routes.draw do
     end
   end
 
-
-namespace :admin do
-  get '/dashboard', to: 'dashboard#index'
-  get '/query', to: 'query#index', as: 'query'
-end
+  namespace :admin do
+    get '/dashboard', to: 'dashboard#index'
+    get '/query', to: 'query#index', as: 'query'
+  end
 
   namespace :users, path: ":id" do
     patch 'change_password/update', to: 'passwords#update', as: :password_patch
@@ -43,10 +48,17 @@ end
   post '/email_confirmation', to: 'confirmations#verify', as: :confirm_email
   get '/email_confirmation', to: 'confirmations#confirm_reset', as: :confirm_reset
 
+  namespace :api do
+    namespace :v1 do
+      resources :weathers, only: [:index]
+    end
+  end
+
+
   resources :confirmations, only: [:new, :create]
 
   resources :private_chats, only: [:index, :new, :create, :show]
   resources :messages, only: [:create]
 
-  mount ActionCable.server, at: '/cable'
+  # mount ActionCable.server, at: '/cable'
 end

@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
 
   def create
     manual_login? ? @user = manual_login_info : @user = oauth_login_info
-    if @user #&& @user.authenticate(params[:session][:password])
+    if @user #&& manual_login? && @user.authenticate(params[:session][:password]))  || (@user && !manual_login?)
       session[:user_id] = @user.id
       if @user.vendor?
         redirect_to user_vendor_dashboard_path(@user)
@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
         redirect_to user_trips_path(@user)
       end
     else
-      flash[:notice] = "The email or password you entered is incorrect"
+      flash[:notice] = "The email or password you entered is incorrect or you have subscribed via a 3rd party authetication"
       redirect_to login_path
     end
   end
@@ -31,7 +31,10 @@ class SessionsController < ApplicationController
   end
 
   def manual_login_info
-    User.find_by(email: params[:session][:email])
+    user = User.find_by(email: params[:session][:email])
+    if user && user.authenticate(params[:session][:password])
+      user
+    end
   end
 
   def oauth_login_info

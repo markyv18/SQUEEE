@@ -46,7 +46,9 @@ end
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'selenium'
   gem 'launchy'
+  gem 'byebug'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails', '~> 4.0'
   gem 'pry-rails'
