@@ -14738,7 +14738,9 @@ $(document).on('turbolinks:load', function() {
 });
 $(document).on('turbolinks:load', function() {
   var directionsService, directionsDisplay, map;
-  fetchAttractions($('#day-0').text());
+  if ($('.date-button').length > 0) {
+    fetchAttractions($('#day-0').text());
+  }
   dateButton();
 });
 
