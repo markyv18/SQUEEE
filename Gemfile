@@ -34,7 +34,6 @@ gem 'omniauth-github'
 gem 'omniauth-amazon'
 gem 'omniauth-twitch'
 gem 'omniauth-twitter'
-gem 'stripe'
 gem 'sidekiq'
 
 group :development do
