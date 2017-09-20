@@ -9,12 +9,14 @@ describe 'Iitneraries API' do
                     name: "Denver Zoo",
                     lat: 39.7505669,
                     lng: -104.9488444)
-    create(:itinerary, trip: trip, place: place)
-    to_del = create(:itinerary, trip: trip, date: "2017-10-29")
+    to_del = create(:itinerary, trip: trip, place: place)
+    create(:itinerary, trip: trip, date: "2017-10-29")
 
     expect(trip.places.count).to eq 3
 
-    delete "/api/v1/trips/#{trip.id}/itineraries/#{to_del.id}"
+    to_del_params = {date: to_del.date, name: "Denver Zoo"}
+
+    delete "/api/v1/trips/#{trip.id}/itineraries", params: to_del_params
 
     expect(response).to have_http_status(:no_content)
     expect(trip.places.count).to eq 2

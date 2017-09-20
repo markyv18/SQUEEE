@@ -34,4 +34,12 @@ class Trip < ApplicationRecord
       Attraction.new(raw_data)
     end
   end
+
+  def delete_itinerary(date, name)
+    itineraries
+      .joins(:place)
+      .where(date: date)
+      .find_by(places: {name: name})
+      .delete
+  end
 end
