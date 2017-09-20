@@ -8,6 +8,14 @@ Rails.application.routes.draw do
   get '/auth/:provider/callback', to: 'sessions#create'
 
   resources :tours, only: [:index, :show]
+  namespace :api do
+    namespace :v1 do
+      namespace :trips do
+        get ':id/attractions', to: 'attractions_by_date#index'
+      end
+    end
+  end
+
   resources :users, only: [:new, :create, :edit, :update, :show, :destroy] do
     resources :trips, only: [:new, :index, :create, :show, :edit, :update] do
       resources :itineraries, only: [:destroy]

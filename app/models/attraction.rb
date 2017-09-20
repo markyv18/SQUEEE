@@ -1,6 +1,7 @@
 require 'json'
 
 class Attraction
+  include ActiveModel::Serialization
   attr_reader :name,
               :vicinity,
               :place_id,
@@ -16,7 +17,6 @@ class Attraction
               :reviews
 
   def initialize(attr={})
-    @attr = attr
     @name = attr[:name]
     @vicinity = attr[:vicinity]
     @place_id = attr[:place_id]

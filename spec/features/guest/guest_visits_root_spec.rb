@@ -40,7 +40,7 @@ feature "guest visits root" do
 
         expect(current_path).to eq(search_path)
         within(".column-list") do
-          expect(page).to have_content("Beijing")
+          expect(page).to have_content("Denver")
           expect(page).to_not have_content("London")
           expect(page).to have_selector(".attraction-preview")
         end

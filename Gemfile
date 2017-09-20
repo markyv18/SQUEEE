@@ -27,6 +27,7 @@ gem 'bootstrap-social-rails'
 gem 'twilio-ruby'
 gem 'faker'
 gem 'redis'
+gem 'active_model_serializers'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
 gem 'omniauth-github'
@@ -52,6 +53,9 @@ group :development, :test do
   gem 'simplecov', :require => false
   gem 'vcr'
   gem 'webmock'
+  gem 'database_cleaner'
+  gem 'selenium-webdriver'
+  gem 'geckodriver-helper'
   gem 'byebug'
   gem 'awesome_print'
 end
