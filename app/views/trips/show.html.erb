@@ -1,15 +1,19 @@
 
 <h2 class="trip-title" align="center">Itinerary for <%= @trip.start_city %><br>FROM: <%= @trip.start_date %> - <%= @trip.end_date %></h2>
 
-<div class="hidden" data-lat="<%= @trip.city.lat %>" data-lng="<%= @trip.city.lng %>">
+<div class="hidden" data-lat="<%= @trip.city.lat %>" data-lng="<%= @trip.city.lng %>" data-id="<%= @trip.id %>">
 
 </div>
 
 <div class="container">
   <div class="row text-center">
-    <% @trip.days.each_with_index do |day, index|%>
-      <%= link_to day, '#', class: "date-button" %>
-    <% end %>
+    <h4>Select a date to see attractions for that day!</h4>
+    <div class="btn-group">
+      <% @trip.days.each_with_index do |day, index|%>
+        <%= link_to day, '#', class: "date-button btn", id: "day-#{index}" %>
+      <% end %>
+    </div>
+    <%= link_to "Edit Trip", edit_user_trip_path(@trip.user, @trip), class: "btn btn-edit-email" %>
   </div>
 
   <div class="column-list col-xs-12 col-sm-12 col-md-3 col-lg-3 scroll-column" id="attractions">
@@ -18,9 +22,4 @@
 
   <div class="main-map col-xs-12 col-sm-12 col-md-9 col-lg-9" id="map"></div>
 
-</div>
-
-
-<div align="center">
-  <%= button_to "Edit Trip", edit_user_trip_path(@trip.user, @trip), method: :get, class: "btn btn-edit-email" %>
 </div>

@@ -1,9 +1,8 @@
 $(document).on('ready', function() {
   var directionsService, directionsDisplay, map;
+  fetchAttractions($('#day-0').text());
   dateButton();
 });
-
-var marker = 1;
 
 var dateButton = function () {
   $('.date-button').click(function(event) {
@@ -13,11 +12,9 @@ var dateButton = function () {
 }
 
 var fetchAttractions = function(date) {
-  if (marker !== 1) {
-    marker.setMap(null);
-  }
+  var id = $('[data-lat]').data().id;
   return $.ajax({
-    url: '/api/v1/trips/2001/attractions',
+    url: '/api/v1/trips/' + id + '/attractions',
     method: "GET",
     data: {date: date},
     success: function (data) {
@@ -42,7 +39,7 @@ var renderCards = function(data) {
       $('#attractions').append(element.html);
     });
   } else {
-    $('#attractions').append("No attractions yet!");
+    $('#attractions').append('<h4 class="text-center">No attractions yet! Go add some more!</h4>');
   }
 };
 
@@ -65,7 +62,6 @@ var setMarker = function(data) {
   marker = new google.maps.Marker({
     position: {lat: data[0].lat, lng: data[0].lng},
     map: map,
-    icon: {url: data[0].photo_url, scaledSize: new google.maps.Size(40, 40), origin: new google.maps.Point(0, 0), anchor: new google.maps.Point(0, 32)},
     title: data[0].name
   });
   map.setCenter({lat: data[0].lat, lng: data[0].lng})
