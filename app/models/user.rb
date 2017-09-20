@@ -37,6 +37,6 @@ class User < ApplicationRecord
   end
 
   def welcome_email
-    SendEmailJob.perform_later(User.last)
+    SendEmailJob.perform_later(self)
   end
 end
