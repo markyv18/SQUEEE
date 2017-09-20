@@ -35,6 +35,7 @@ class Trip < ApplicationRecord
       raw_data = GooglePlacesService.fetch_details(place.google_place_id)
       Attraction.new(raw_data)
     end
+  end
 
   def email_trip
     SendTripJob.perform_later(self)
