@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/logout', to: 'sessions#destroy'
   get '/auth/:provider/callback', to: 'sessions#create'
 
+  resources :tours, only: [:index, :show]
   resources :users, only: [:new, :create, :edit, :update, :show, :destroy] do
     resources :trips, only: [:new, :index, :create, :show, :edit, :update] do
       resources :itineraries, only: [:destroy]

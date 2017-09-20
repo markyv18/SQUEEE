@@ -1,0 +1,65 @@
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-offset-1 col-sm-6">
+      <h1><%= @yelp_tour.name %></h1>
+    </div>
+    <div class="col-sm-3">
+      <br>
+      <p><%= @yelp_tour.address.first %></p>
+      <p><%= @yelp_tour.address.last %></p>
+    </div>
+    <div class="col-sm-2">
+      <br>
+      <p><%= @yelp_tour.phone %></p>
+      <%= render partial: "layouts/rating_stars", :locals => {:rating => @yelp_tour.rating } %>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-6">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="<%= @yelp_tour.photos.shift %>" height="400px">
+          </div>
+          <% @yelp_tour.photos.each do |photo| %>
+            <div class="item">
+              <img src="<%= photo %>" height="400px">
+            </div>
+          <% end %>
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div id="tour-map">
+        <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('tour-map'), {
+            center: {lat: <%= @yelp_tour.location[:lat].to_i %>, lng: <%= @yelp_tour.location[:long].to_i %>},
+            zoom: 13
+          });
+        }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_map_api_key'] %>&callback=initMap" async defer></script>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
