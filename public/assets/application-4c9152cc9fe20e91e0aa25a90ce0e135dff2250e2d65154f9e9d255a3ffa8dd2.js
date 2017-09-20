@@ -11014,9 +11014,9 @@ Released under the MIT license
  */
 
 
-;
-
 (function() {
+  var context = this;
+
   (function() {
     (function() {
       this.Rails = {
@@ -11036,9 +11036,9 @@ Released under the MIT license
       };
 
     }).call(this);
-  }).call(this);
+  }).call(context);
 
-  var Rails = this.Rails;
+  var Rails = context.Rails;
 
   (function() {
     (function() {
@@ -14081,6 +14081,8 @@ return t.dispatch("turbolinks:before-render",{data:{newBody:e}})},r.prototype.no
 
 }).call(this);
 (function() {
+  var context = this;
+
   (function() {
     (function() {
       var slice = [].slice;
@@ -14139,9 +14141,9 @@ return t.dispatch("turbolinks:before-render",{data:{newBody:e}})},r.prototype.no
       };
 
     }).call(this);
-  }).call(this);
+  }).call(context);
 
-  var ActionCable = this.ActionCable;
+  var ActionCable = context.ActionCable;
 
   (function() {
     (function() {
@@ -14916,6 +14918,33 @@ var initWelcome = function () {
     zoom: 12
   });
 };
+var API = "http://localhost:3000";
+
+$(document).ready(function(){
+
+  $('form').on('submit', function(event){
+    event.preventDefault();
+  });
+
+  $('.wx-btn').on('click', function () {
+    var destination = $('.wx').val();
+    return $.ajax({
+      url: API + '/api/v1/weathers',
+      method: 'GET',
+      data: { destination }
+    })
+    .done(function(forecast){
+      $('.wx-search').empty()
+      $('.wx-search').append('<p> Current Weather for: <strong class="new-trip">' + forecast.location + '</strong></p>' + '<p>' + forecast.conditions + ' & ' + forecast.temp + ' Degrees </p>' + '<p>' + forecast.humidity + ' Humidity & Winds ' + forecast.wind + ' </p>' +
+                             '<form action="/weather" method="get"> <input type="text" name="forecast" value= "' + forecast.location + '" </form>' +
+                             '<a href="/weather"> click here  to see the extended forecast </a>'
+    );
+    })
+    .fail(function(error){
+      console.error(error);
+    });
+  });
+});
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //

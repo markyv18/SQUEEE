@@ -1,4 +1,4 @@
-/* line 3, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/admin-dash.scss */
+/* line 3, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/admin-dash.scss */
 h1.signed-up-users {
   color: #A72D70;
   font-family: 'Oswald', sans-serif;
@@ -6,68 +6,68 @@ h1.signed-up-users {
   float: left;
 }
 
-/* line 10, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/admin-dash.scss */
+/* line 10, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/admin-dash.scss */
 td.user-count {
   margin-left: -200px;
 }
 
-/* line 14, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/admin-dash.scss */
+/* line 14, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/admin-dash.scss */
 .signed-up {
   align-items: center;
 }
 
-/* line 18, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/admin-dash.scss */
+/* line 18, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/admin-dash.scss */
 .btn-search {
   background-color: #DB711E !important;
   color: white !important;
 }
 
-/* line 23, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/admin-dash.scss */
+/* line 23, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/admin-dash.scss */
 .btn-search:hover {
   background-color: #DB711E !important;
   color: white !important;
 }
 
-/* line 28, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/admin-dash.scss */
+/* line 28, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/admin-dash.scss */
 .email-form {
   align-items: center;
 }
-/* line 5, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/api/v1/trips/attractions_by_date.scss */
+/* line 5, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/api/v1/trips/attractions_by_date.scss */
 div#map {
   height: 400px;
 }
 
-/* line 9, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/api/v1/trips/attractions_by_date.scss */
+/* line 9, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/api/v1/trips/attractions_by_date.scss */
 div#attractions {
   height: 400px;
 }
-/* line 1, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/attraction-details.scss */
+/* line 1, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/attraction-details.scss */
 .attraction-details {
   border: 1pt solid #E8E8E8;
 }
 
-/* line 4, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/attraction-details.scss */
+/* line 4, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/attraction-details.scss */
 .attraction-details-field {
   padding: 8px;
   border-top: 1pt solid #E8E8E8;
 }
 
-/* line 8, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/attraction-details.scss */
+/* line 8, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/attraction-details.scss */
 .attraction-details-hours li {
   font-size: small;
 }
 
-/* line 12, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/attraction-details.scss */
+/* line 12, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/attraction-details.scss */
 .attraction-details-hours ul {
   list-style-type: none;
   padding: 0;
 }
 
-/* line 18, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/attraction-details.scss */
+/* line 18, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/attraction-details.scss */
 .review-detail img {
   width: 50px;
 }
-/* line 3, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/cards.scss */
+/* line 3, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/cards.scss */
 .card {
   background-color: white;
   margin-bottom: 10px;
@@ -75,13 +75,13 @@ div#attractions {
   text-align: center;
   border-radius: 5px;
 }
-/* line 9, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/cards.scss */
+/* line 9, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/cards.scss */
 .card h4 {
   color: #DB711E;
   font-weight: bold;
 }
 
-/* line 16, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/cards.scss */
+/* line 16, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/cards.scss */
 .city-image {
   width: 100%;
   height: 200px;
@@ -93,18 +93,18 @@ div#attractions {
   border-top-right-radius: 5px;
 }
 
-/* line 27, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/cards.scss */
+/* line 27, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/cards.scss */
 h2.city-name {
   margin-top: -1px;
   margin-bottom: 15px;
 }
-/* line 7, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/chat.scss */
+/* line 7, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/chat.scss */
 .messages-container {
   display: flex;
   flex-direction: column;
 }
 
-/* line 12, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/chat.scss */
+/* line 12, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/chat.scss */
 #messages-table {
   align-self: center;
   border: 0.2px solid #cfd7e1;
@@ -115,76 +115,76 @@ h2.city-name {
   height: 300px;
 }
 
-/* line 23, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/chat.scss */
+/* line 23, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/chat.scss */
 .new_message {
   width: 50%;
 }
-/* line 27, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/chat.scss */
+/* line 27, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/chat.scss */
 .new_message #message_content {
   width: 100%;
 }
-/* line 34, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/chat.scss */
+/* line 34, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/chat.scss */
 .new_message .message-btn {
   display: none;
 }
 
-/* line 54, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/chat.scss */
+/* line 54, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/chat.scss */
 .message:hover {
   opacity: 0.8;
   background-color: #cfd7e1;
 }
 
-/* line 78, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/chat.scss */
+/* line 78, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/chat.scss */
 .message-body {
   font-size: 16px;
 }
 
-/* line 82, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/chat.scss */
+/* line 82, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/chat.scss */
 .message-user {
   font-size: 14px;
 }
 
-/* line 86, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/chat.scss */
+/* line 86, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/chat.scss */
 #private_chat_participant_ids {
   height: 300px;
   overflow: scroll;
   width: 100%;
 }
 
-/* line 92, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/chat.scss */
+/* line 92, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/chat.scss */
 .select-btn {
   width: 100%;
   background-color: #47bd8f;
   color: #fff;
 }
-/* line 98, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/chat.scss */
+/* line 98, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/chat.scss */
 .select-btn:hover {
   opacity: 0.8;
   color: #fff;
 }
 
-/* line 104, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/chat.scss */
+/* line 104, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/chat.scss */
 .instructions {
   text-align: center;
 }
 
-/* line 108, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/chat.scss */
+/* line 108, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/chat.scss */
 .btn-chat {
   background-color: #DB711E;
   color: white;
   margin: 10px;
 }
 
-/* line 114, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/chat.scss */
+/* line 114, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/chat.scss */
 .button_to {
   margin: 0;
 }
 
-/* line 118, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/chat.scss */
+/* line 118, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/chat.scss */
 .btn-chat-text {
   color: white;
 }
-/* line 3, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 3, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .attraction-preview {
   border: 1pt solid #E8E8E8;
   margin-bottom: 5%;
@@ -192,12 +192,12 @@ h2.city-name {
   position: relative;
 }
 
-/* line 10, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 10, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .attraction-preview:hover {
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* line 14, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 14, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .attraction-preview-link {
   position: absolute;
   top: 0;
@@ -208,7 +208,7 @@ h2.city-name {
   z-index: 9;
 }
 
-/* line 24, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 24, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .add-attraction-button, .remove-attraction-button {
   position: absolute;
   top: 10px;
@@ -219,39 +219,39 @@ h2.city-name {
   z-index: 1000;
 }
 
-/* line 34, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 34, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand {
   max-width: 16px;
   box-sizing: content-box;
   color: rgba(0, 0, 0, 0);
 }
 
-/* line 39, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 39, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand.btn-xs {
   max-width: 12px;
 }
 
-/* line 42, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 42, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand.btn-sm {
   max-width: 14px;
 }
 
-/* line 45, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 45, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand.btn-lg {
   max-width: 18px;
 }
 
-/* line 48, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 48, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand i {
   color: #333;
 }
 
-/* line 51, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 51, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand.btn-link i {
   color: #428bca;
 }
 
-/* line 54, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 54, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand.btn-primary i,
 .btn-expand.btn-success i,
 .btn-expand.btn-info i,
@@ -260,183 +260,204 @@ h2.city-name {
   color: #fff;
 }
 
-/* line 61, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 61, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand:hover,
 .btn-expand:focus,
 .btn-expand:active {
   max-width: 400px;
   transition-duration: .5s;
 }
-/* line 3, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/confirmation.scss */
+/* line 3, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/confirmation.scss */
 .btn-confirm {
   background-color: #DB711E !important;
   color: white !important;
 }
 
-/* line 8, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/confirmation.scss */
+/* line 8, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/confirmation.scss */
 .btn-confirm:hover {
   background-color: #DB711E !important;
   color: white !important;
 }
 
-/* line 13, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/confirmation.scss */
+/* line 13, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/confirmation.scss */
 .form {
   margin-right: 710px;
 }
 
-/* line 17, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/confirmation.scss */
+/* line 17, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/confirmation.scss */
 .control-label {
   padding-bottom: 10px;
   color: #A72D70;
 }
 
-/* line 22, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/confirmation.scss */
+/* line 22, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/confirmation.scss */
 h1.name {
   color: #A72D70;
   font-family: 'Oswald', sans-serif;
 }
 
-/* line 27, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/confirmation.scss */
+/* line 27, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/confirmation.scss */
 p {
   font-family: 'Helvetica';
 }
-/* line 3, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/create_new_trip.scss */
+/* line 3, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/create_new_trip.scss */
 h1.create-trip {
   color: #A72D70;
   font-family: 'Oswald', sans-serif;
   text-align: center;
 }
 
-/* line 9, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/create_new_trip.scss */
+/* line 9, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/create_new_trip.scss */
 .btn-create-trip {
   background-color: #DB711E !important;
   color: white !important;
 }
-/* line 3, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/drop_down_menus.scss */
+/* line 3, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/drop_down_menus.scss */
 .days-dropdown {
   margin-top: 15px;
   background-color: #DB711E;
   color: white;
 }
-/* line 3, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/master.scss */
+/* line 3, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
 body {
   background-color: white;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 8, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/master.scss */
+  /* line 8, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
   #map {
     height: 500px;
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
   }
+
+  /* line 14, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
+  #tour-map {
+    height: 304px;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
 @media only screen and (min-width: 768px) {
-  /* line 16, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/master.scss */
+  /* line 22, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
   #map {
     height: 70%;
     width: 73%;
     margin-right: 1%;
     border-radius: 10px;
   }
+
+  /* line 29, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
+  #tour-map {
+    height: 415px;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
-/* line 24, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/master.scss */
+/* line 37, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* line 30, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/master.scss */
-h2, h4 {
+/* line 43, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
+h1, h2, h4 {
   color: #A5427D;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 }
 
-/* line 36, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/master.scss */
+/* line 49, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
+p {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* line 53, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
 .light-text {
   color: #BEBEBE;
 }
-/* line 3, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 3, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar-secondary .navbar-toggle:before {
   content: "Trip Planning Tools";
 }
 
-/* line 7, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 7, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar-filters .navbar-toggle:before {
   content: "Map Filters";
 }
 
-/* line 11, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 11, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .row-test {
   max-height: 104px;
 }
 
-/* line 15, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 15, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .logo {
   max-height: 104px;
   padding-top: 5px;
   padding-left: 17px;
 }
 
-/* line 21, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 21, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar-main, .navbar-secondary {
   margin-bottom: 0 !important;
 }
 
-/* line 25, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 25, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
 }
-/* line 28, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 28, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .no-gutters .col,
 .no-gutters [class*="col-"] {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 35, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 35, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar {
   background-color: white !important;
   border: 0 !important;
 }
 
-/* line 40, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 40, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 li a {
   color: #A5427D !important;
   font-family: 'Oswald', sans-serif;
   font-size: 1.15em;
 }
 
-/* line 46, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 46, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .btn-nav {
   background-color: #DB711E;
   border: 0px;
   color: white;
 }
 
-/* line 52, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 52, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar-right {
   margin-right: -30px;
 }
 
-/* line 56, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 56, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .sign-in-link {
   font-size: 1.25em;
   font-weight: 500;
 }
 
-/* line 61, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 61, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 button.navbar-toggle.collapsed {
   float: left;
   background-color: #DB711E;
   color: white;
 }
 
-/* line 67, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 67, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 button.navbar-toggle.collapsed.third {
   float: left;
   margin-left: 15px;
@@ -444,186 +465,186 @@ button.navbar-toggle.collapsed.third {
   color: white;
 }
 
-/* line 74, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 74, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 button.navbar-toggle.third {
   margin-left: 15px;
   background-color: #DB711E;
   color: white;
 }
 
-/* line 80, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 80, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 button.navbar-toggle {
   float: left;
   background-color: #DB711E;
   color: white;
 }
 
-/* line 86, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 86, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .sign-in-link {
   text-transform: uppercase;
 }
 
-/* line 90, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 90, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .new-trip {
   text-transform: uppercase;
 }
 
-/* line 94, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 94, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar-secondary {
   text-transform: uppercase;
   padding-bottom: 25px;
 }
 
-/* line 99, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 99, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar-filters {
   text-transform: uppercase;
 }
 
-/* line 103, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 103, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar-third {
   padding-bottom: 5px;
 }
 
-/* line 107, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 107, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .glyphicon-cog {
   font-size: 1.1em;
 }
 
-/* line 111, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 111, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 span.user-name {
   text-transform: uppercase;
   padding-bottom: 20px;
 }
-/* line 3, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/password-edit.scss */
+/* line 3, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/password-edit.scss */
 div.update-password {
   align-items: center;
   padding-top: 50px;
 }
 
-/* line 8, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/password-edit.scss */
+/* line 8, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/password-edit.scss */
 .btn-update-password:hover {
   background-color: #DB711E;
   color: white !important;
 }
 
-/* line 13, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/password-edit.scss */
+/* line 13, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/password-edit.scss */
 .btn-update-password {
   background-color: #DB711E;
   color: white;
 }
-/* line 3, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/session_new.scss */
+/* line 3, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/session_new.scss */
 form {
   width: 400px;
   margin: 0 auto;
 }
 
-/* line 8, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/session_new.scss */
+/* line 8, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/session_new.scss */
 .sign-in {
   text-align: center;
 }
 
-/* line 12, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/session_new.scss */
+/* line 12, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/session_new.scss */
 .oauth-logins {
   text-align: center;
 }
 
-/* line 16, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/session_new.scss */
+/* line 16, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/session_new.scss */
 .btn-google, .btn-facebook {
   margin: 10px;
   width: 200px;
 }
 
-/* line 21, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/session_new.scss */
+/* line 21, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/session_new.scss */
 .btn-sign-in {
   background-color: #DB711E;
   color: white;
 }
 
-/* line 26, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/session_new.scss */
+/* line 26, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/session_new.scss */
 .btn-get-sms {
   background-color: #DB711E;
   color: white;
 }
 
-/* line 31, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/session_new.scss */
+/* line 31, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/session_new.scss */
 .sign-in a {
   color: #DB711E;
 }
 
-/* line 35, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/session_new.scss */
+/* line 35, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/session_new.scss */
 .forgot-password-field {
   align-items: center;
 }
 
-/* line 39, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/session_new.scss */
+/* line 39, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/session_new.scss */
 .email-field {
   margin-left: 75px;
 }
-/* line 3, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/user_show.scss */
+/* line 3, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/user_show.scss */
 .panel-heading {
   background-color: #A72D70 !important;
   color: white !important;
 }
 
-/* line 8, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/user_show.scss */
+/* line 8, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/user_show.scss */
 .panel-info {
   border-color: #A72D70 !important;
 }
 
-/* line 12, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/user_show.scss */
+/* line 12, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/user_show.scss */
 .user-row {
   margin-bottom: 14px;
 }
 
-/* line 16, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/user_show.scss */
+/* line 16, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/user_show.scss */
 .user-row:last-child {
   margin-bottom: 0;
 }
 
-/* line 20, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/user_show.scss */
+/* line 20, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/user_show.scss */
 .table-user-information > tbody > tr > td {
   border-top: 1px solid #dddddd;
 }
 
-/* line 24, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/user_show.scss */
+/* line 24, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/user_show.scss */
 .table-user-information > tbody > tr:first-child {
   border-top: 0;
 }
 
-/* line 29, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/user_show.scss */
+/* line 29, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/user_show.scss */
 .table-user-information > tbody > tr > td {
   border-top: 0;
 }
 
-/* line 32, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/user_show.scss */
+/* line 32, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/user_show.scss */
 .toppad {
   margin-top: 20px;
 }
 
-/* line 36, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/user_show.scss */
+/* line 36, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/user_show.scss */
 .btn-edit-email {
   background-color: #DB711E;
   color: white;
 }
 
-/* line 41, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/user_show.scss */
+/* line 41, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/user_show.scss */
 .btn-edit-email:hover {
   background-color: #DB711E;
   color: white !important;
 }
 
-/* line 46, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/user_show.scss */
+/* line 46, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/user_show.scss */
 .btn-edit-phone {
   background-color: #A72D70;
   color: white;
 }
 
-/* line 51, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/user_show.scss */
+/* line 51, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/user_show.scss */
 .btn-edit-phone:hover {
   background-color: #A72D70;
   color: white !important;
 }
-/* line 1, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/welcome.scss */
+/* line 1, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/welcome.scss */
 .city-image {
   max-height: 150px;
   max-width: 100%;
@@ -14446,126 +14467,147 @@ button.close {
   background-color: #fff;
 }
 
-/* line 3, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/master.scss */
+/* line 3, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
 body {
   background-color: white;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 8, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/master.scss */
+  /* line 8, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
   #map {
     height: 500px;
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
   }
+
+  /* line 14, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
+  #tour-map {
+    height: 304px;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
 @media only screen and (min-width: 768px) {
-  /* line 16, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/master.scss */
+  /* line 22, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
   #map {
     height: 70%;
     width: 73%;
     margin-right: 1%;
     border-radius: 10px;
   }
+
+  /* line 29, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
+  #tour-map {
+    height: 415px;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
-/* line 24, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/master.scss */
+/* line 37, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* line 30, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/master.scss */
-h2, h4 {
+/* line 43, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
+h1, h2, h4 {
   color: #A5427D;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 }
 
-/* line 36, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/master.scss */
+/* line 49, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
+p {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* line 53, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/master.scss */
 .light-text {
   color: #BEBEBE;
 }
 
-/* line 3, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 3, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar-secondary .navbar-toggle:before {
   content: "Trip Planning Tools";
 }
 
-/* line 7, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 7, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar-filters .navbar-toggle:before {
   content: "Map Filters";
 }
 
-/* line 11, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 11, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .row-test {
   max-height: 104px;
 }
 
-/* line 15, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 15, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .logo {
   max-height: 104px;
   padding-top: 5px;
   padding-left: 17px;
 }
 
-/* line 21, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 21, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar-main, .navbar-secondary {
   margin-bottom: 0 !important;
 }
 
-/* line 25, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 25, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
 }
-/* line 28, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 28, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .no-gutters .col,
 .no-gutters [class*="col-"] {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 35, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 35, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar {
   background-color: white !important;
   border: 0 !important;
 }
 
-/* line 40, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 40, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 li a {
   color: #A5427D !important;
   font-family: 'Oswald', sans-serif;
   font-size: 1.15em;
 }
 
-/* line 46, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 46, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .btn-nav {
   background-color: #DB711E;
   border: 0px;
   color: white;
 }
 
-/* line 52, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 52, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar-right {
   margin-right: -30px;
 }
 
-/* line 56, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 56, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .sign-in-link {
   font-size: 1.25em;
   font-weight: 500;
 }
 
-/* line 61, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 61, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 button.navbar-toggle.collapsed {
   float: left;
   background-color: #DB711E;
   color: white;
 }
 
-/* line 67, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 67, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 button.navbar-toggle.collapsed.third {
   float: left;
   margin-left: 15px;
@@ -14573,58 +14615,58 @@ button.navbar-toggle.collapsed.third {
   color: white;
 }
 
-/* line 74, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 74, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 button.navbar-toggle.third {
   margin-left: 15px;
   background-color: #DB711E;
   color: white;
 }
 
-/* line 80, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 80, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 button.navbar-toggle {
   float: left;
   background-color: #DB711E;
   color: white;
 }
 
-/* line 86, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 86, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .sign-in-link {
   text-transform: uppercase;
 }
 
-/* line 90, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 90, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .new-trip {
   text-transform: uppercase;
 }
 
-/* line 94, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 94, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar-secondary {
   text-transform: uppercase;
   padding-bottom: 25px;
 }
 
-/* line 99, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 99, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar-filters {
   text-transform: uppercase;
 }
 
-/* line 103, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 103, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .navbar-third {
   padding-bottom: 5px;
 }
 
-/* line 107, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 107, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 .glyphicon-cog {
   font-size: 1.1em;
 }
 
-/* line 111, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/nav-bar.scss */
+/* line 111, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/nav-bar.scss */
 span.user-name {
   text-transform: uppercase;
   padding-bottom: 20px;
 }
 
-/* line 3, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 3, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .attraction-preview {
   border: 1pt solid #E8E8E8;
   margin-bottom: 5%;
@@ -14632,12 +14674,12 @@ span.user-name {
   position: relative;
 }
 
-/* line 10, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 10, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .attraction-preview:hover {
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* line 14, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 14, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .attraction-preview-link {
   position: absolute;
   top: 0;
@@ -14648,7 +14690,7 @@ span.user-name {
   z-index: 9;
 }
 
-/* line 24, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 24, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .add-attraction-button, .remove-attraction-button {
   position: absolute;
   top: 10px;
@@ -14659,39 +14701,39 @@ span.user-name {
   z-index: 1000;
 }
 
-/* line 34, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 34, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand {
   max-width: 16px;
   box-sizing: content-box;
   color: rgba(0, 0, 0, 0);
 }
 
-/* line 39, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 39, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand.btn-xs, .btn-group-xs > .btn-expand.btn {
   max-width: 12px;
 }
 
-/* line 42, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 42, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand.btn-sm, .btn-group-sm > .btn-expand.btn {
   max-width: 14px;
 }
 
-/* line 45, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 45, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand.btn-lg, .btn-group-lg > .btn-expand.btn {
   max-width: 18px;
 }
 
-/* line 48, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 48, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand i {
   color: #333;
 }
 
-/* line 51, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 51, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand.btn-link i {
   color: #428bca;
 }
 
-/* line 54, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 54, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand.btn-primary i,
 .btn-expand.btn-success i,
 .btn-expand.btn-info i,
@@ -14700,7 +14742,7 @@ span.user-name {
   color: #fff;
 }
 
-/* line 61, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/city-attractions.scss */
+/* line 61, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/city-attractions.scss */
 .btn-expand:hover,
 .btn-expand:focus,
 .btn-expand:active {
@@ -14708,13 +14750,13 @@ span.user-name {
   transition-duration: .5s;
 }
 
-/* line 28, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/application.scss */
+/* line 28, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/application.scss */
 .scroll-column {
   height: 100%;
   overflow: scroll;
 }
 
-/* line 33, /Users/michaelsagapolutele/turing/3module/projects/spike/SQUEEE/app/assets/stylesheets/application.scss */
+/* line 33, /Users/michaelsagapolutele/turing/3module/projects/SQUEEE/app/assets/stylesheets/application.scss */
 a:hover {
   text-decoration: none;
 }
