@@ -14077,6 +14077,10 @@ return t.dispatch("turbolinks:before-render",{data:{newBody:e}})},r.prototype.no
 
 }).call(this);
 (function() {
+
+
+}).call(this);
+(function() {
   (function() {
     (function() {
       var slice = [].slice;
@@ -14741,15 +14745,40 @@ $(document).on('turbolinks:load', function() {
   if ($('.date-button').length > 0) {
     fetchAttractions($('#day-0').text());
   }
+  $('#day-0').addClass('active');
   dateButton();
 });
 
 var dateButton = function () {
   $('.date-button').click(function(event) {
     event.preventDefault();
+    $(this).addClass('active').siblings().removeClass('active')
     fetchAttractions($(this).text());
   })
 }
+
+var removeButton = function () {
+  $('.remove-attraction-button').click(function(event) {
+    event.preventDefault();
+    deleteAttraction($(this).parent().data().name);
+  })
+};
+
+var deleteAttraction = function (name) {
+  var id = $('[data-lat]').data().id;
+  var activeDate = $('.date-button.active').text();
+  return $.ajax({
+    url: '/api/v1/trips/' + id + '/itineraries',
+    method: "DELETE",
+    data: {date: activeDate, name: name},
+    success: function (data) {
+      fetchAttractions(activeDate);
+    },
+    failure: function(error) {
+      console.error(error);
+    }
+  })
+};
 
 var fetchAttractions = function(date) {
   var id = $('[data-lat]').data().id;
@@ -14758,6 +14787,7 @@ var fetchAttractions = function(date) {
     method: "GET",
     data: {date: date},
     success: function (data) {
+      debugger;
       $('#attractions').html('');
       initMap();
       if (data.length > 1) {
@@ -14768,7 +14798,8 @@ var fetchAttractions = function(date) {
         setMarker(data);
       } else {
         renderCards(data);
-      }
+      };
+      removeButton();
     }
   })
 };
@@ -14822,8 +14853,6 @@ var initMap = function() {
 
 var initTrips = function() {
   var center = $('[data-lat]').data();;
-
-  goog = google;
 
   map = new (google.maps.Map)($('#map')[0], {
     zoom: 10,
