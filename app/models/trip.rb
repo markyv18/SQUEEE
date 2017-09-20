@@ -1,4 +1,6 @@
 class Trip < ApplicationRecord
+  after_create :email_trip
+
   belongs_to :user
   belongs_to :city
   has_many :itineraries
@@ -42,5 +44,10 @@ class Trip < ApplicationRecord
       .where(date: date)
       .find_by(places: {name: name})
       .delete
+  end
+  
+  def email_trip
+    SendTripJob.perform_later(self)
+    SendTripJob.set(wait_until: (self.start_date - 1.day).to_s).perform_later(self)
   end
 end

@@ -1,0 +1,20 @@
+<hr>
+<div class="container">
+  <div class="row">
+    <% @yelp_tours.tours.each do |tour| %>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="<%= tour_path(tour.id) %>">
+            <img class="image-thumbnail" src="<%= tour.image_url %>" width="100%" style="height: 300px">
+          </a>
+          <div class="caption">
+            <a href="<%= tour_path(tour.id) %>"><h4><%= tour.name %></h4></a>
+            <a href="<%= tour.url %>">
+              <%= render partial: "layouts/rating_stars", :locals => {:rating => tour.rating } %>
+            </a>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "User sees all open conversations" do
   it "user1 sees a list of participants usernames indicating open conversations" do
     user = create(:user)
-    user2 = create(:user)
+    user2 = create(:user, username: "Bob")
     chat = PrivateChat.create(participant_ids: ["#{user.id}", "#{user2.id}"])
     message = Message.create(content: "hi", user_id: user.id, private_chat_id: chat.id)
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
@@ -19,7 +19,7 @@ RSpec.describe "User sees all open conversations" do
   end
 
   it "user2 sees a list of participants usernames indicating open conversations" do
-    user = create(:user)
+    user = create(:user, username: "Bob")
     user2 = create(:user)
     chat = PrivateChat.create(participant_ids: ["#{user.id}", "#{user2.id}"])
     message = Message.create(content: "hi", user_id: user.id, private_chat_id: chat.id)
