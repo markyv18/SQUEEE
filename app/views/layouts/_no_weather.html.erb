@@ -1,6 +1,6 @@
-<%= form_tag(root_path, method: :get, class: 'nav navbar-form navbar-left') do %>
-  <div>
-    <%= text_field_tag :destination, "City, ST", class: 'transp-text' %>
-    <%= submit_tag 'get weather', class: 'btn btn-search' %>
-  </div>
-<% end %>
+  <form class="nav navbar-form navbar-left" >
+    <div>
+      <input type="text" name="destination" value="find a city" class="transp-text wx">
+      <input type="submit" class="btn btn-search wx-btn" >
+    </div>
+  </form>

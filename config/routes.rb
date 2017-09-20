@@ -43,10 +43,17 @@ Rails.application.routes.draw do
   post '/email_confirmation', to: 'confirmations#verify', as: :confirm_email
   get '/email_confirmation', to: 'confirmations#confirm_reset', as: :confirm_reset
 
+  namespace :api do
+    namespace :v1 do
+      resources :weathers, only: [:index]
+    end
+  end
+
+
   resources :confirmations, only: [:new, :create]
 
   resources :private_chats, only: [:index, :new, :create, :show]
   resources :messages, only: [:create]
 
-  mount ActionCable.server, at: '/cable'
+  # mount ActionCable.server, at: '/cable'
 end

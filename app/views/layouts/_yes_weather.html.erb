@@ -1,14 +1,16 @@
 
 <!-- hidden params passed into the controller that is the location of this search -->
 <div>
+  <ul>
     <%= form_tag(weather_path, method: :get, class: 'nav navbar-form navbar-left') do %>
-    <%= @presenter.current_weather.location %>
-    <%= @presenter.current_weather.conditions %>
-    <%= @presenter.current_weather.temp %>
-    <%= @presenter.current_weather.humidity %>
-    <%= @presenter.current_weather.wind %>
-    <% text_field_tag :destination_forecast, @presenter.current_weather.location, class: 'transp-text' %>
-    <% text_field_tag :forecast, @presenter.current_weather.location, class: 'transp-text' %>
+    <li> Destination: <%= @presenter.current_weather.location %> </li>
+    <li> Conditions: <%= @presenter.current_weather.conditions %> </li>
+    <li> Temp: <%= @presenter.current_weather.temp %> </li>
+    <li> Humidity: <%= @presenter.current_weather.humidity %> </li>
+    <li> Wind: <%= @presenter.current_weather.wind %> </li>
+    <%= text_field_tag :destination_forecast, @presenter.current_weather.location %>
+    <% text_field_tag :forecast, @presenter.current_weather.location %>
     <%= submit_tag 'extended forecast', class: 'btn btn-search' %>
+  </ul>
   </div>
 <% end %>

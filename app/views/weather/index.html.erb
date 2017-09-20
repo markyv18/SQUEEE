@@ -1,12 +1,11 @@
-HI SEE ALL THE EXTENDED FORECAST HERE
+<h2>Your extended forecast for <em> <font color="blue"> <%= @presenter.city %> </font>  </em> </h2>
+<br><br>
 <ul>
-  <% @forecast.each do |day| %>
+  <% @presenter.forecast.each do |day| %>
     <li>Forecast Time: <%= day.day %> </li>
     <li> Forecast: <%= day.temp_text %> </li>
     <li> Chance of Precipitation: <%= day.percent_precip %>% </li>
-<!-- turn icon into some pic or something -->
-    <li> Make this into a cute icon: <%= day.weather_icon_url %> </li>
-    <li> Do date math here if i want to show  <%= day.today_plus %> </li>
+    <li> <img src=" <%= day.weather_icon_url %> " > </li>
     <br><br><br>
   <% end  %>
 </ul>

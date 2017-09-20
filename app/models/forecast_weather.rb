@@ -6,13 +6,10 @@ class ForecastWeather
               :today_plus # 0 is today 1 is tomorrow, 2 is 2 days from now... add it to a date to generate day of the week?
 
   def initialize(day_forecast)
-    # weather_forecast.each do |day_forecast|
       @day = day_forecast[:title]
       @temp_text = day_forecast[:fcttext]
       @percent_precip = day_forecast[:pop]
       @weather_icon_url = day_forecast[:icon_url]
-      @today_plus  = day_forecast[:period]
-    # end
   end
 
   def self.find_forecast(destination)
