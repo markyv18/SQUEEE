@@ -15,9 +15,9 @@
         var attraction_img = '<%= raw @attraction.photo_url %>';
       </script>
     <% end %>
-    <%= javascript_include_tag 'application' %>
 
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <%= tag :meta, name: 'google_maps', content: ENV['google_map_api_key'] %>
   </head>
 
   <body>
@@ -26,5 +26,7 @@
         <%= content_tag :div, msg, class: name %>
       <% end %>
     <%= yield %>
+
   </body>
+  <%= javascript_include_tag 'application' %>
 </html>
