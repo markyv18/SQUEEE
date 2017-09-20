@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @presenter = WelcomePresenter.new(params)
+    @cities = City.all
   end
 end

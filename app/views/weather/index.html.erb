@@ -1,7 +1,7 @@
-<h2>Your extended forecast for <em> <font color="blue"> <%= @presenter.city %> </font>  </em> </h2>
+<h2> Your extended forecast for <em> <font color="blue"> <%= @wx_presenter.city %> </font>  </em> </h2>
 <br><br>
 <ul>
-  <% @presenter.forecast.each do |day| %>
+  <% @wx_presenter.forecast.each do |day| %>
     <li>Forecast Time: <%= day.day %> </li>
     <li> Forecast: <%= day.temp_text %> </li>
     <li> Chance of Precipitation: <%= day.percent_precip %>% </li>
