@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.feature 'User goes to trip show page' do
-  scenario 'and sees the attractions for the first day of the trip' do
+  scenario 'and sees the attractions for the first day of the trip', js: true do
     user = create(:user)
     trip = create(:trip, user: user)
     create(:itinerary, trip: trip)
@@ -27,8 +27,21 @@ RSpec.feature 'User goes to trip show page' do
     expect(page).to have_content "2017-10-29"
     expect(page).to have_content "2017-10-30"
 
-    expect(page).to have_content "Downtown Aquarium"
-    expect(page).to have_content "Denver Zoo"
-    expect(page).to_not have_content "Puzzah! Escape Room"
+    expect(page).to have_content "Downtown Aquarium".upcase
+    expect(page).to have_content "Denver Zoo".upcase
+    expect(page).to_not have_content "Puzzah! Escape Room".upcase
+
+    click_on "2017-10-29"
+
+    expect(page).to have_content "Puzzah! Escape Room".upcase
+    expect(page).to_not have_content "Downtown Aquarium".upcase
+    expect(page).to_not have_content "Denver Zoo".upcase
+
+    click_on "2017-10-30"
+
+    expect(page).to_not have_content "Puzzah! Escape Room".upcase
+    expect(page).to_not have_content "Downtown Aquarium".upcase
+    expect(page).to_not have_content "Denver Zoo".upcase
+    expect(page).to have_content "No attractions yet! Go add some more!".upcase
   end
 end
