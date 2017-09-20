@@ -26,6 +26,7 @@ class Trip < ApplicationRecord
     places
       .joins(:itineraries)
       .where(itineraries: {date: date})
+      .distinct
   end
 
   def attractions_by_date(date)
