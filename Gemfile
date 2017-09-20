@@ -58,6 +58,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'selenium-webdriver'
   gem 'geckodriver-helper'
+  gem 'database_cleaner'
   gem 'byebug'
   gem 'awesome_print'
 end

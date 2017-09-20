@@ -15,7 +15,7 @@ $(document).ready(function(){
     })
     .done(function(forecast){
       $('.wx-search').empty()
-      $('.wx-search').append('<ul><li class="new-trip"><a href="/weather"> Click for extended forecast: <font color="red">' + forecast.location + '</font>: ' + forecast.conditions + ' & ' + forecast.temp + ' Degrees </a></li></ul> '
+      $('.wx-search').append('<li><a href="/weather"> Click for extended forecast: <font color="blue">' + forecast.location + '</font>: ' + forecast.conditions + ' & ' + forecast.temp + ' Degrees </a></li> '
     );
     })
     .fail(function(error){

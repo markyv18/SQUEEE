@@ -11014,9 +11014,9 @@ Released under the MIT license
  */
 
 
-;
-
 (function() {
+  var context = this;
+
   (function() {
     (function() {
       this.Rails = {
@@ -11036,9 +11036,9 @@ Released under the MIT license
       };
 
     }).call(this);
-  }).call(this);
+  }).call(context);
 
-  var Rails = this.Rails;
+  var Rails = context.Rails;
 
   (function() {
     (function() {
@@ -14077,6 +14077,8 @@ return t.dispatch("turbolinks:before-render",{data:{newBody:e}})},r.prototype.no
 
 }).call(this);
 (function() {
+  var context = this;
+
   (function() {
     (function() {
       var slice = [].slice;
@@ -14135,9 +14137,9 @@ return t.dispatch("turbolinks:before-render",{data:{newBody:e}})},r.prototype.no
       };
 
     }).call(this);
-  }).call(this);
+  }).call(context);
 
-  var ActionCable = this.ActionCable;
+  var ActionCable = context.ActionCable;
 
   (function() {
     (function() {
@@ -14887,6 +14889,31 @@ var initWelcome = function () {
     zoom: 12
   });
 };
+var API = "http://localhost:3000";
+
+$(document).ready(function(){
+
+  $('form').on('submit', function(event){
+    event.preventDefault();
+  });
+
+  $('.wx-btn').on('click', function () {
+    var destination = $('.wx').val();
+    return $.ajax({
+      url: API + '/api/v1/weathers',
+      method: 'GET',
+      data: { destination }
+    })
+    .done(function(forecast){
+      $('.wx-search').empty()
+      $('.wx-search').append('<li><a href="/weather"> Click for extended forecast: <font color="blue">' + forecast.location + '</font>: ' + forecast.conditions + ' & ' + forecast.temp + ' Degrees </a></li> '
+    );
+    })
+    .fail(function(error){
+      console.error(error);
+    });
+  });
+});
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
