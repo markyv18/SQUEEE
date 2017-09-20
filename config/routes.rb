@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       namespace :trips do
         get ':id/attractions', to: 'attractions_by_date#index'
+
+        delete ':id/itineraries/:it_id', to: 'itineraries#destroy'
       end
     end
   end
