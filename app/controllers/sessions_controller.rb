@@ -3,8 +3,8 @@ class SessionsController < ApplicationController
   end
 
   def create
-    @user = User.find_by(email: params[:session][:email])
-    if @user && @user.authenticate(params[:session][:password])
+    manual_login? ? @user = manual_login_info : @user = oauth_login_info
+    if @user #&& @user.authenticate(params[:session][:password])
       session[:user_id] = @user.id
       if @user.vendor?
         redirect_to user_vendor_dashboard_path(@user)
@@ -22,5 +22,19 @@ class SessionsController < ApplicationController
   def destroy
     session.clear
     redirect_to root_path
+  end
+
+  private
+
+  def manual_login?
+    params[:session]
+  end
+
+  def manual_login_info
+    User.find_by(email: params[:session][:email])
+  end
+
+  def oauth_login_info
+    User.find_or_create_by_auth(request.env['omniauth.auth'])
   end
 end

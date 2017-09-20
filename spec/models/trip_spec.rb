@@ -24,7 +24,7 @@ RSpec.describe Trip do
                         google_place_id: "ChIJcY8lIE55bIcRKWyHPdIO_VM",
                         name: "Denver Zoo",
                         lat: 39.7505669,
-                        lat: -104.9488444)
+                        lng: -104.9488444)
         create(:itinerary, trip: trip, place: place)
         create(:itinerary, trip: trip, date: "2017-10-29")
 
@@ -42,7 +42,7 @@ RSpec.describe Trip do
                       google_place_id: "ChIJcY8lIE55bIcRKWyHPdIO_VM",
                       name: "Denver Zoo",
                       lat: 39.7505669,
-                      lat: -104.9488444)
+                      lng: -104.9488444)
       create(:itinerary, trip: trip, place: place)
       create(:itinerary, trip: trip, date: "2017-10-29")
 

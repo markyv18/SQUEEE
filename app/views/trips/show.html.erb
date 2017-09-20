@@ -1,41 +1,25 @@
 
 <h2 class="trip-title" align="center">Itinerary for <%= @trip.start_city %><br>FROM: <%= @trip.start_date %> - <%= @trip.end_date %></h2>
 
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-      <div class="panel panel-info">
-        <div class="panel-heading">
-          <h3 class -"panel-title">YOUR ITINERARY</h2>
-        </div>
-        <div class="panel-body">
-          <div class="row">
-            <div class=" col-md-9 col-lg-9 ">
-              <table class="table table-user-information">
-                <tbody>
-                  ATTRACTIONS:<br>
-                  <% @trip.sorted_itineraries.each do |itinerary| %>
-                      <tr>
-                        <div class="attraction-name">
-                          <tr>
-                            <td class="itinerary-place-name"><%= link_to itinerary.place.name, "/search?attraction=#{itinerary.place.google_place_id}" %></td>
-                            <td class="itinerary-date"><%= itinerary.date %></td>
-                            <td><%= link_to "Remove Attraction", user_trip_itinerary_path(current_user, @trip, itinerary), method: :delete %></td>
-                          </tr>
-                        </div>
-                      </tr>
-                    <% end %>
-                </tbody>
-              </table>
-             </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="hidden" data-lat="<%= @trip.city.lat %>" data-lng="<%= @trip.city.lng %>" data-id="<%= @trip.id %>">
+
 </div>
 
-<div align="center">
-  <%= button_to "Edit Trip", edit_user_trip_path(@trip.user, @trip), method: :get, class: "btn btn-edit-email" %>
+<div class="container">
+  <div class="row text-center">
+    <h4>Select a date to see attractions for that day!</h4>
+    <div class="btn-group">
+      <% @trip.days.each_with_index do |day, index|%>
+        <%= link_to day, '#', class: "date-button btn", id: "day-#{index}" %>
+      <% end %>
+    </div>
+    <%= link_to "Edit Trip", edit_user_trip_path(@trip.user, @trip), class: "btn btn-edit-email" %>
+  </div>
+
+  <div class="column-list col-xs-12 col-sm-12 col-md-3 col-lg-3 scroll-column" id="attractions">
+
+  </div>
+
+  <div class="main-map col-xs-12 col-sm-12 col-md-9 col-lg-9" id="map"></div>
+
 </div>

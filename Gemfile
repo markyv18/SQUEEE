@@ -28,6 +28,13 @@ gem 'twilio-ruby'
 gem 'faker'
 gem 'redis'
 gem 'active_model_serializers'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-facebook'
+gem 'omniauth-github'
+gem 'omniauth-amazon'
+gem 'omniauth-twitch'
+gem 'omniauth-twitter'
+gem 'stripe'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
@@ -46,4 +53,8 @@ group :development, :test do
   gem 'vcr'
   gem 'webmock'
   gem 'database_cleaner'
+  gem 'selenium-webdriver'
+  gem 'geckodriver-helper'
+  gem 'byebug'
+  gem 'awesome_print'
 end
