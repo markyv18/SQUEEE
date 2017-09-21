@@ -45,9 +45,9 @@ class Trip < ApplicationRecord
       .find_by(places: {name: name})
       .delete
   end
-  
+
   def email_trip
     SendTripJob.perform_later(self)
-    SendTripJob.set(wait_until: (self.start_date - 1.day).to_s).perform_later(self)
+    SendTripJob.set(wait_until: (self.start_date - 3.day).to_s).perform_later(self)
   end
 end
