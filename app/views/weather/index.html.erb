@@ -1,11 +1,19 @@
-<h2>Your extended forecast for <em> <font color="blue"> <%= @presenter.city %> </font>  </em> </h2>
-<br><br>
-<ul>
-  <% @presenter.forecast.each do |day| %>
-    <li>Forecast Time: <%= day.day %> </li>
-    <li> Forecast: <%= day.temp_text %> </li>
-    <li> Chance of Precipitation: <%= day.percent_precip %>% </li>
-    <li> <img src=" <%= day.weather_icon_url %> " > </li>
-    <br><br><br>
-  <% end  %>
-</ul>
+<hr>
+<div class="container">
+  <h2> Your extended forecast for <em> <font color="blue"> <%= @wx_presenter.city %> </font>  </em> </h2>
+  <br>
+  <div class="row">
+    <% @wx_presenter.forecast.each do |day| %>
+      <div class="col-md-8" width="100%" style="height: 200px">
+        <div class="thumbnail">
+          <div class="caption">
+            <a><h4><%= day.day %></h4></a>
+          </div>
+          <li> <a> Forecast: <%= day.temp_text %>  </a> </li>
+          <li> <a> Chance of Precipitation: <%= day.percent_precip %>%  </a>  </li>
+          <img src="<%= day.weather_icon_url %>" width="50px" style="height: 50px">
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

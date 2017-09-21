@@ -1,6 +1,5 @@
 class WeatherController < ApplicationController
   def index
-    byebug
-    @forecast = ForecastWeather.find_forecast(params[:forecast])
+    @wx_presenter = WeatherPresenter.new(session[:wx_city])
   end
 end

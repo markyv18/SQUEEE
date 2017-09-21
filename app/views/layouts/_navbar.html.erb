@@ -44,12 +44,7 @@
               </div>
             <% end %>
 
-            <form class="nav navbar-form navbar-left wx-search" >
-              <div>
-                <input type="text" name="destination" value="City, ST" class="transp-text wx">
-                <input type="submit" class="btn btn-search wx-btn" >
-              </div>
-            </form>
+            <%= render partial: '/layouts/nav_wx' %>
 
             <ul class="nav navbar-nav navbar-right">
               <% if current_user && current_user.vendor? %>
