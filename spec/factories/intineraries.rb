@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :itinerary do
     trip
-    place "Yankee FUCKING Stadium"
+    place 
     date "2017-10-28"
   end
 end
