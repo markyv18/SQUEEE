@@ -363,7 +363,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 3.7)
   rails (~> 5.1.2)
-  redis
+  redis (~> 3.3)
   rspec-rails
   sass-rails (~> 5.0)
   selenium
@@ -381,4 +381,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.2
