@@ -2,6 +2,7 @@ FactoryGirl.define do
   factory :city do
     place_id "ChIJzxcfI6qAa4cR1jaKJ_j0jhE"
     name "Denver"
+    state "CO"
     country "United States"
     lat 39.7392
     lng -104.9903

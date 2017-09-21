@@ -13,6 +13,14 @@
     <p>Bret Funk</p>
     <p>Founder and CEO</p>
     <p>Cloney Island Travel</p>
+      <% @forecast.each do |day| %>
+      <div>
+        <li>Time: <%= day.day %> </li>
+        <li>Forecast: <%= day.temp_text %> </li>
+        <li>Chance of Precipitation: <%= day.percent_precip %>% </li>
+        <br><br>
+      </div>
+      <% end  %>
     </p>
   </body>
 </html>

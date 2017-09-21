@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170919202848) do
+ActiveRecord::Schema.define(version: 20170921010145) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20170919202848) do
     t.string "place_id"
     t.string "picture"
     t.string "country"
+    t.string "state"
   end
 
   create_table "itineraries", force: :cascade do |t|
